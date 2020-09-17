@@ -1,6 +1,6 @@
 var app = require('express')();
 app.get('/', (req, res) => {
-  res.send('<h1>Hello world</h1>');
+  res.sendFile(__dirname+'/public/index.html');
 });
 console.log("Routes.js Loaded!")
 module.exports = app;
