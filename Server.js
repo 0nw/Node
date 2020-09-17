@@ -1,7 +1,10 @@
 var app = require('express')();
 var http = require('http').createServer(app);
-const router = require("./Router.js")
-
+app.use(require("./Auth.js"));
+app.use(require("./Chat.js"));
+app.use(require("./Routes.js"));
 http.listen(3000, () => {
-  console.log('listening on *:3000');
+  console.log('Listening on *:3000');
 });
+
+module.exports = app
