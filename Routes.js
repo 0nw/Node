@@ -1,7 +1,8 @@
 var app = require('express')();
-app.get('/', (req, res) => {
-  res.sendFile(__dirname+'/public/index.html');
-});
+app.set('view engine', 'pug')
+app.get('/', function (req, res) {
+  res.render('index', { title: 'Hey'})
+})
 console.log("Routes.js Loaded!")
 module.exports = app;
 //\\
