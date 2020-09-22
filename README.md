@@ -8,5 +8,5 @@
 # Javascript Files
 - Server.js - Initiates the server and imports all modules / libraries.
 - Routes.js - A file holding the routing functions for all pages.
-- Auth.js - A file holding the authorization functions.
+- Auth.js - A file holding the authentication functions (login / register).
 - Post.js - File that holds the posting function.
